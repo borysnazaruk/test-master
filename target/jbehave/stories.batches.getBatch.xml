@@ -1,0 +1,13 @@
+<story path="stories/batches/getBatch.story" title="">
+<meta>
+<property keyword="@" name="MSVS-168" value=""/>
+</meta>
+<scenario keyword="Scenario:" title="MSVC-168 verify GET request for batches">
+<meta>
+<property keyword="@" name="tangerine" value=""/>
+</meta>
+<step outcome="successful">When WS-User send GET request to endpoint &apos;/batch&apos;</step>
+<step outcome="successful">Then WS-User receive HTTP response with status code &apos;200&apos;</step>
+<step outcome="successful">And Response body should not be NULL</step>
+</scenario>
+</story>

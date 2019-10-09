@@ -243,12 +243,10 @@ public class AcceptanceTestSuite extends SerenityStories {
     }
 
     private void setChromeDriverWindows() {
-        System.out.println("=======================================================I AM HERE ==============================>>>>>>>>>>>>");
         System.setProperty("webdriver.chrome.driver", "drivers/windows/chromedriver.exe");
     }
 
     private void setChromeDriverOsx() {
-        System.out.println("=====!!!!!!!!!!!!+======");
         System.setProperty("webdriver.chrome.driver", "drivers/osx/chromedriver");
     }
 

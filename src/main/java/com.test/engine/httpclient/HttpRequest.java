@@ -153,6 +153,11 @@ public class HttpRequest {
         return this;
     }
 
+    public HttpRequest addBearerToken(final String value) {
+        return addHeader("Bearer Token", value);
+    }
+
+
     public HttpRequest addCSRFToken() {
         Cookie cookie = DefaultSecureHttpClient.getCookies().stream().filter(co -> co.getName().equals("XSRF-TOKEN"))
                 .findFirst().orElse(null);
@@ -466,6 +471,7 @@ public class HttpRequest {
     }
 
     public enum ContentType {
+        BEARER_TOKEN(System.getProperty("bearerToken")),//
         APPLICATION_XML("application/xml"), //
         APPLICATION_JSON("application/json;charset=utf-8"), //
         APPLICATION_OCTET_STREAM("application/octet-stream"), FORM_DATA("application/x-www-form-urlencoded"), //

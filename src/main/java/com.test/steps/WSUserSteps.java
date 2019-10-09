@@ -8,8 +8,8 @@ public class WSUserSteps {
     RestClient restClient;
 
     @Step
-    public void http_request(String city) {
-        restClient.getWeatherDetails(city);
+    public void get_request(String endpoint) {
+        restClient.getWeatherDetails(endpoint);
     }
 
     @Step

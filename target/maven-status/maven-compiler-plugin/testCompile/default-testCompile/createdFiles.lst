@@ -1,0 +1,11 @@
+test/core/StoryBatchSorter.class
+common/ExtendedExamplesTableFactory.class
+test/core/AcceptanceTestSuite$1.class
+test/definitionsteps/WeatherDefinitionSteps.class
+test/core/AcceptanceTestSuite.class
+test/definitionsteps/BatchDefinitionSteps.class
+test/core/story/CustomStoryParser.class
+test/definitionsteps/DefinitionSteps.class
+test/core/story/filters/PriorityFilter.class
+test/core/story/filters/AbstractFilter.class
+test/core/story/filters/ScenarioIdFilter.class

@@ -1,2 +1,0 @@
-stories/LookupADefinition.story
-stories/weather.story

@@ -12,7 +12,7 @@ public class WeatherDefinitionSteps {
 
     @When("WS-User send GET request to endpoint '<city>'")
     public void whenWSUserSendGETRequestToEndpointcity(String city) {
-        wsUser.http_request(city);
+        wsUser.get_request(city);
     }
 
     @Then("WS-User receive HTTP response with status code '<statusCode>'")

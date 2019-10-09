@@ -1,0 +1,13 @@
+<story path="stories/batches/postBatchOrder.story" title="">
+<meta>
+<property keyword="@" name="MSVS-151" value=""/>
+</meta>
+<scenario keyword="Scenario:" title="MSVC-151 verify POST order request for batches">
+<meta>
+<property keyword="@" name="tangerine" value=""/>
+</meta>
+<step outcome="successful">When WS-User send POST request to endpoint &apos;customer-order&apos;</step>
+<step outcome="successful">Then WS-User receive HTTP response with status code &apos;200&apos;</step>
+<step outcome="successful">And Response body should contains status &apos;processing&apos; and order id</step>
+</scenario>
+</story>

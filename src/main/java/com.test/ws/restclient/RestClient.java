@@ -10,6 +10,7 @@ import io.restassured.filter.log.ResponseLoggingFilter;
 import io.restassured.response.Response;
 import io.restassured.response.ResponseOptions;
 import io.restassured.specification.RequestSpecification;
+import lombok.ToString;
 import net.thucydides.core.pages.PageObject;
 import org.assertj.core.api.SoftAssertions;
 import org.json.simple.JSONObject;
@@ -106,9 +107,5 @@ public class RestClient extends PageObject {
         return HttpRequest.post("http://restapi.demoqa.com/customer/register").addBody(Parser.toJson(body)).addAccept(APPLICATION_JSON.toString())
                 .addContentType(APPLICATION_JSON.toString()).doWithLogs().sendAndGetResponse();
     }
-    @Test
-    public void sada() {
-        assertThat(usingjsonParserToRegisterCustomer().getStatusCode()).isEqualTo(200);
 
-    }
 }

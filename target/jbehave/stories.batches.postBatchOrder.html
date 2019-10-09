@@ -1,0 +1,18 @@
+<div class="story">
+<h1></h1>
+<div class="path">stories/batches/postBatchOrder.story</div>
+<div class="meta">
+<div class="keyword">Meta:</div>
+<div class="property">@MSVS-151 </div>
+</div>
+<div class="scenario">
+<h2>Scenario: MSVC-151 verify POST order request for batches</h2>
+<div class="meta">
+<div class="keyword">Meta:</div>
+<div class="property">@tangerine </div>
+</div>
+<div class="step successful">When WS-User send POST request to endpoint 'customer-order'</div>
+<div class="step successful">Then WS-User receive HTTP response with status code '200'</div>
+<div class="step successful">And Response body should contains status 'processing' and order id</div>
+</div>
+</div>
